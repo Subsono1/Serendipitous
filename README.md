@@ -1,31 +1,73 @@
 Overview
 
-## Project Name
+## Randomize it!
 
-The name of your project.
+
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+The purpose of this website, is to help people find new alternatives to music and movies. There will be, two categories to choose from (Music, Movies) each one will be a separate button. Once the button is pressed it will create a random return of that specific button. It will show the item with all the information so people can open up to new alternatives and dig more into the returned information. 
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+I will be using one API from Test dive (https://tastedive.com/read/api), [API URL] (https://tastedive.com/api/similar)
+```
+ "Similar": {
+        "Info": [
+            {
+                "Name": "!!!",
+                "Type": "music"
+            }
+        ],
+        "Results": [
+            {
+                "Name": "The Go! Team",
+                "Type": "music"
+            },
+            {
+                "Name": "Death From Above 1979",
+                "Type": "music"
+            },
+            {
+                "Name": "Tv On The Radio",
+                "Type": "music"
+            },
+            {
+                "Name": "Menomena",
+                "Type": "music"
+            },
+            {
+                "Name": "Lcd Soundsystem",
+                "Type": "music"
+            },
+            {
+                "Name": "Hot Chip",
+                "Type": "music"
+            },
+            {
+                "Name": "Clap Your Hands Say Yeah",
+                "Type": "music"
+            },
+            {
+                "Name": "Vhs Or Beta",
+                "Type": "music"
+```
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[front-page Click it](https://imgur.com/a/fvklYdZ)
+[second-page Click it] (https://imgur.com/Ubdj50w)
 
 ### MVP/PostMVP
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
+-will use an API to get data from a library of music and moves.
+-will start by developing phone first
+-clicking on the first button will create a random return of a song, clicking a second button will create a random return of a movie. will return image, information and links to resources. 
+- a second page will add a general search for movies or songs with it's information.
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
@@ -35,23 +77,20 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |July 13| Project Approval | Incomplete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
+|July 14| deeper Css| Incomplete
+|July 15| javaScript incorporation  | Incomplete
+|July 16| MVP/ testing | Incomplete
 |July 17| Presentations | Incomplete
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+[Matrix] (https://www.meta-chart.com/share/matrix-priority)
 
 ## Timeframes
 
@@ -61,9 +100,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Html structure | H | 3hrs| 0hrs | 0hrs |
+| Css | H | 5hrs| 0hrs | 0hrs |
+| Javascript | H | 11hrs| 0hrs | 0hrs |
+| Working with API | H | 3hrs| 0hrs | 0hrs |
+| Evaluating and Fixes| H | 6hrs| 0hrs | 0hrs |
+| Changes| L | 6hrs| 0hrs | 0hrs |
+| Githubpages| L | 2hrs| 0hrs | 0hrs |
+| Total | H | 36hrs| 0hrs | 0hrs |
 
 ## Code Snippet
 
