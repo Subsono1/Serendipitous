@@ -10,7 +10,7 @@ The purpose of this website, is to help people find new alternatives to music an
 
 ## API and Data Sample
 
-I will be using one API from Test dive (https://tastedive.com/read/api), [API URL] (https://tastedive.com/api/similar)
+I will be using one API from Test dive (https://tastedive.com/read/api)- [API URL] (https://tastedive.com/api/similar)
 ```
  "Similar": {
         "Info": [
@@ -55,8 +55,8 @@ I will be using one API from Test dive (https://tastedive.com/read/api), [API UR
 
 ## Wireframes
 
-[front-page Click it](https://imgur.com/a/fvklYdZ)
-[second-page Click it] (https://imgur.com/Ubdj50w)
+[front-page Click it](https://imgur.com/a/fvklYdZ)- [second-page Click it ](https://imgur.com/Ubdj50w)
+
 
 ### MVP/PostMVP
 
@@ -70,10 +70,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
 
 ## Project Schedule
 
@@ -83,8 +79,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |July 13| Project Approval | Incomplete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| deeper Css| Incomplete
-|July 15| javaScript incorporation  | Incomplete
+|July 14| Deeper Css| Incomplete
+|July 15| JavaScript incorporation  | Incomplete
 |July 16| MVP/ testing | Incomplete
 |July 17| Presentations | Incomplete
 
@@ -94,9 +90,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -111,13 +105,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
-
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+NOT YET
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.
+ U
