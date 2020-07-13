@@ -60,13 +60,13 @@ I will be using one API from Test dive (https://tastedive.com/read/api)- [API UR
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+  
 
 #### MVP 
--will use an API to get data from a library of music and moves.
--will start by developing phone first
--clicking on the first button will create a random return of a song, clicking a second button will create a random return of a movie. will return image, information and links to resources. 
-- a second page will add a general search for movies or songs with it's information.
+.will use an API to get data from a library of music and moves.
+.will start by developing phone first
+.clicking on the first button will create a random return of a song, clicking a second button will create a random return of a movie. will return image, information and links to resources. 
+.a second page will add a general search for movies or songs with it's information.
 
 
 #### PostMVP  
@@ -108,4 +108,4 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 NOT YET
 
 ## Change Log
- U
+ 
