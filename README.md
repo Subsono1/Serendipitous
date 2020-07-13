@@ -1,6 +1,6 @@
 Overview
 
-## Randomize it!
+## Serendipitous
 
 
 
@@ -63,10 +63,10 @@ I will be using one API from Test dive (https://tastedive.com/read/api)- [API UR
   
 
 #### MVP 
-.will use an API to get data from a library of music and moves.
-.will start by developing phone first
-.clicking on the first button will create a random return of a song, clicking a second button will create a random return of a movie. will return image, information and links to resources. 
-.a second page will add a general search for movies or songs with it's information.
+1.will use an API to get data from a library of music and moves.
+2.will start by developing phone first
+3.clicking on the first button will create a random return of a song, clicking a second button will create a random return of a movie. will return image, information and links to resources. 
+4.a second page will add a general search for movies or songs with it's information.
 
 
 #### PostMVP  
