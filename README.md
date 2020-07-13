@@ -63,13 +63,16 @@ I will be using one API from Test dive (https://tastedive.com/read/api)- [API UR
   
 
 #### MVP 
-1.will use an API to get data from a library of music and moves.
-2.will start by developing phone first
-3.clicking on the first button will create a random return of a song, clicking a second button will create a random return of a movie. will return image, information and links to resources. 
-4.a second page will add a general search for movies or songs with it's information.
+- Will use an API to get data from a library of music and movies.
+- Will start by developing phone first.
+- Clicking on the first button will create a random return of a song, clicking a second button will create a random return of a movie. will return image, information and links to resources. 
+- A second page will add a general search for movies or songs with it's information.
 
 
 #### PostMVP  
+- Monitor traffic of users.
+- Create a database to store feedbacks
+- Link to different social-media websites.
 
 ## Project Schedule
 
@@ -79,8 +82,8 @@ I will be using one API from Test dive (https://tastedive.com/read/api)- [API UR
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |July 13| Project Approval | Incomplete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Deeper Css| Incomplete
 |July 15| JavaScript incorporation  | Incomplete
+|July 14| Deeper Css| Incomplete
 |July 16| MVP/ testing | Incomplete
 |July 17| Presentations | Incomplete
 
@@ -95,13 +98,17 @@ I will be using one API from Test dive (https://tastedive.com/read/api)- [API UR
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Html structure | H | 3hrs| 0hrs | 0hrs |
-| Css | H | 5hrs| 0hrs | 0hrs |
-| Javascript | H | 11hrs| 0hrs | 0hrs |
-| Working with API | H | 3hrs| 0hrs | 0hrs |
+| JS/Creating functions | H | 3hrs| 0hrs | 0hrs |
+| Working with API | H | 4hrs| 0hrs | 0hrs |
+| JS/appnd. elements to the DOM | H |4hrs| 0hrs | 0hrs |
+| JS/remv. elemnts| H | 2hrs| 0hrs | 0hrs |
+| Evaluating JS funtionability | H | 2hrs| 0hrs | 0hrs |
+| Css mobile style | H | 3hrs| 0hrs | 0hrs |
+| Css general styling | H | 4hrs| 0hrs | 0hrs |
 | Evaluating and Fixes| H | 6hrs| 0hrs | 0hrs |
-| Changes| L | 6hrs| 0hrs | 0hrs |
-| Githubpages| L | 2hrs| 0hrs | 0hrs |
-| Total | H | 36hrs| 0hrs | 0hrs |
+| Editing| L | 5hrs| 0hrs | 0hrs |
+| Githubpages Deployment| L | 1hrs| 0hrs | 0hrs |
+| Total | H | 37hrs| 0hrs | 0hrs |
 
 ## Code Snippet
 
