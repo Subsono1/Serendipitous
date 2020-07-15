@@ -80,7 +80,7 @@ I will be using one API from Test dive (https://tastedive.com/read/api)- [API UR
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
+|July 13| Project Approval | Complete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |July 15| JavaScript incorporation  | Incomplete
 |July 14| Deeper Css| Incomplete
