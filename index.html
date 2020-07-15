@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
@@ -12,18 +13,18 @@
 <body>
   <header>
     <nav>
-      <ul>
+      <ul id="list">
         <li></li>
-        <a href="">Home</a>
-      </ul>
-      <input type="text" id="blank" placeholder="search">
-      <button id="search">Customize Search</button>
+        <a href="" id="home">Home</a>
+      </ul  >
+      <input type="text" id="input" placeholder="search">
+      <button id="search">Customize 
+        Search</button>
     </nav>
 
   </header>
-  <div id="search-response"></div>
-  <div>
-    <section>
+  
+    <section class="section1" >
       <h1>Welcome to Serendipitous</h1>
       <br>
       <p>laakakakalalakalalal</p>
@@ -31,14 +32,15 @@
   </div>
   <main>
     <div>
-      <section>
-       <button type="submit">Press for Music!</button>
+      <article id="results"></article>
+      <section class="section2" >
+       <button type="submit" id="music">Press for Music!</button>
         </section>
         <section id="music-info" class="information"></section>
     </div>
     <div>
-      <section>
-        <button type="submit">Press for Movies!</button>
+      <section class="section2">
+        <button type="submit" id="movies">Press for Movies!</button>
       </section>
       <section id="movies-info" class="information"></section>
     </div>
