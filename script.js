@@ -53,6 +53,9 @@ const renderSearch = (allSearch) => {
   })
 };
 
+// function 
+// document.querySelector('section').style =
+
 /////
 
 
