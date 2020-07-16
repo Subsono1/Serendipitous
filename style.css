@@ -1,47 +1,121 @@
+/*
+purple #432371
+light #fbfefb
+orange #f94144
+white for words #fdfffc
+
+
+
+
+*/
 * {
   box-sizing: border-box;
 }
 body {
+  background-color: #2b2d42;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+h1 {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 38px;
+
+  background-color: #ef233c;
+  opacity: .8;
+  color: #F7F3F3;
+  padding: 20px;
+
+}
+
+.section1 {
+  max-width: 100%;
+  margin: 0px;
+  margin-bottom: 40px;
+  
+}
+
+div{
+  height: 50vh;
   width: 100%;
+  background-size: contain;
+  padding: 75px;
+  background: url(https://images.unsplash.com/photo-1575612712058-117b4c670ae8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) no-repeat center fixed;
+  opacity: .8;
 }
-
-nav {
- 
-  background-color: #4E4187;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 30px 4px;
-}
-
-#list {
-  display: flex;
-  justify-content: flex-start;
-  list-style: none;
+.web-info {
+  color: #8d99ae;
+  font-size: 22px;
   
-
-}
-#home {
-  display: flex;
-  color: #FFEAEE;
-  flex-direction: flex-start;
-  text-decoration:  none;
   
+}
+main {
+  background-color: #fbfefb;
+  text-align: justify;
+  margin: 10px;
+  padding: 6px;
+  transform: scaleX(x);
+}
+article {
+  text-align: center;
+  margin-top: 8px;
+  font-family: 'MuseoModerno', cursive;
+}
 
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+iframe {
+  margin: 0 auto;
+  border: 3px solid black;
+}
+
+#music-movie {
+  border-radius: 20%;
+  height: 60px;
+  margin: 20px;
+  background: white;
+  border: 4px solid #432371;
 
 }
 
 #search {
-  align-items: flex-end;
-  justify-content: flex-end;
-  
-  
+  background: #07BEB8;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 6px;
+  border: 4px solid #432371;
   
 }
 
-input {
-  justify-content: flex-end;
- 
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background-color: #8d99ae;
+  color: #fdfffc;
   
+
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    width: 100%;
+  }
+  div {
+    max-width: 100%;
+    margin: 60px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 20px;
+  }
+
 }

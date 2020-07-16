@@ -1,22 +1,24 @@
 
 const KEY = `378732-Sebastia-0KJQN855`
 const form = document.querySelector('form')
+
 form.addEventListener('submit', getInput)
+
 function getInput(e) {
   e.preventDefault()
   
-  const bandValue = document.querySelector('#music-movie').value
+  const musicMovieValue = document.querySelector('#music-movie').value
   
-  console.log(bandValue)
+  console.log(musicMovieValue)
   
-  getMusic(bandValue)
+  getMusicMovie(musicMovieValue)
 }
-async function getMusic(band, movie) {
+async function getMusicMovie(band, movie) {
   try {
     
-    const workingURL = `https://corsanywhere.herokuapp.com/tastedive.com/api/similar?q=${band}%2C${movie}&k=${KEY}&info=1`
+    const URL = `https://corsanywhere.herokuapp.com/tastedive.com/api/similar?q=${band}%2C${movie}&k=${KEY}&info=1&limit=5`
     
-    const response = await axios.get(workingURL)
+    const response = await axios.get(URL)
     
     console.log(response.data.Similar.Results);
     //data that shows the the array.
@@ -50,6 +52,11 @@ const renderSearch = (allSearch) => {
 
   })
 };
+
+/////
+
+
+//////////
 
 
 const removeLastSearch = () => {
