@@ -1,40 +1,62 @@
-const DOMAIN = "https://corsanywhere.herokuapp.com/tastedive.com/";
-const KEY = "378732-Sebastia-0KJQN855";
-const BASE_URL = `${DOMAIN}api/similar?k=${KEY}&`;
 
-async function getMusic(e) {
+const KEY = `378732-Sebastia-0KJQN855`
+const form = document.querySelector('form')
+form.addEventListener('submit', getInput)
+function getInput(e) {
+  e.preventDefault()
   
- 
+  const bandValue = document.querySelector('#music-movie').value
+  
+  console.log(bandValue)
+  
+  getMusic(bandValue)
+}
+async function getMusic(band, movie) {
   try {
-    const input = document.querySelector("#input");
-    const response = await axios.get(`${BASE_URL}q=&info${input.value}`);
-    console.log(response);
+    
+    const workingURL = `https://corsanywhere.herokuapp.com/tastedive.com/api/similar?q=${band}%2C${movie}&k=${KEY}&info=1`
+    
+    const response = await axios.get(workingURL)
+    
+    console.log(response.data.Similar.Results);
     //data that shows the the array.
+    
+    removeLastSearch()
+    
     renderSearch(response.data.Similar.Results)
   } catch (error) {
+    
     console.log(`This is an error : ${error}`);
   }
-
-  
 }
-getMusic()
 
 
-
-
+//////////////////////
 const renderSearch = (allSearch) => {
-
   allSearch.forEach((search) => {
     console.log(search)
+    const container = document.createElement('section')
     const newSearch = document.createElement('article')
     newSearch.innerText = search.Name
-    //to append it it is parent node and append child
-    document.querySelector('#results').appendChild(newSearch)
-   
+    const searchTeaser = document.createElement('p')
+    searchTeaser.innerText = search.wTeaser
+    const video = document.createElement('iframe')
+    video.src = search.yUrl
+    //to append it to parent node and append child
+    container.appendChild(newSearch)
+    container.appendChild(searchTeaser)
+    container.appendChild(video)
+    document.querySelector('.results').appendChild(container)
+
   })
-  
 };
 
 
-const button = document.querySelector("#search")
-button.addEventListener('click', getMusic )
+const removeLastSearch = () => {
+  const musicMovie = document.querySelector('.results');
+  while (musicMovie.lastChild) {
+    musicMovie.removeChild(musicMovie.lastChild)
+  }
+  
+
+}
