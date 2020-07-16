@@ -10,7 +10,7 @@ The purpose of this website, is to help people find new alternatives to music an
 
 ## API and Data Sample
 
-I will be using one API from Test dive (https://tastedive.com/read/api)- [API URL] (https://tastedive.com/api/similar)
+I will be using one API from Test dive (https://tastedive.com/read/api)- 
 ```
  "Similar": {
         "Info": [
