@@ -115,4 +115,7 @@ I will be using one API from Test dive (https://tastedive.com/read/api)- [API UR
 NOT YET
 
 ## Change Log
+- Switched end point on API 
+- Receive suggestions for movies and music in search bar. 
+
  
