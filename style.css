@@ -1,11 +1,9 @@
 /*
-purple #432371
-light #fbfefb
-orange #f94144
-white for words #fdfffc
-
-
-
+body and main background: #2b2d42
+h1 background : #ef233c
+items titles : #ed6a5a
+background for items des.: #9bc1bc
+footer backg.: #35a7ff;
 
 */
 * {
@@ -17,43 +15,44 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  
 }
 
 h1 {
-  font-family: 'MuseoModerno', cursive;
+  font-family: "MuseoModerno", cursive;
   font-size: 38px;
   width: 100%;
   margin: 0px;
   padding-bottom: 40px;
   background-color: #ef233c;
-  opacity: .8;
-  color: #F7F3F3;
+  opacity: 0.8;
+  color: #f7f3f3;
   padding: 20px;
-
 }
 
 .section1 {
   max-width: 100%;
   margin: 0px;
   margin-bottom: 40px;
-  
 }
 
-div{
+div {
   height: 50vh;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   margin: 0px;
   padding: 75px;
-  background: url(https://images.unsplash.com/photo-1575612712058-117b4c670ae8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) no-repeat center fixed;
-  opacity: .8;
+  background: url(https://images.unsplash.com/photo-1575612712058-117b4c670ae8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+    no-repeat center fixed;
+  opacity: 0.8;
 }
 .web-info {
-  color: #8d99ae;
-  font-size: 22px;
-  
-  
+  font-family: "Righteous", cursive;
+  text-shadow: 10px 0 80px rgb(91, 211, 175), 0 10px 90px rgb(241, 230, 230);
+  color: #121314;
+  font-weight: bold;
+  font-size: 26px;
+  background: none;
+  padding-bottom: 20px;
 }
 main {
   background: #2b2d42;
@@ -61,27 +60,29 @@ main {
   text-align: justify;
   margin: 10px;
   padding: 6px;
-  animation: pulse 5s ease infinite ;
+  animation: pulse 5s ease infinite;
+  align-items: center;
 }
-
 
 article {
   background: #ed6a5a;
   text-align: center;
   margin-top: 8px;
-  font-family: 'MuseoModerno', cursive;
+  font-family: "MuseoModerno", cursive;
   border-radius: 6px;
 }
 
 p {
   background: #9bc1bc;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-radius: 8px;
+  font-weight: bold;
 }
 
 iframe {
   margin: 0 auto;
   border: 3px solid black;
+  display: flex;
 }
 
 #music-movie {
@@ -89,49 +90,69 @@ iframe {
   height: 60px;
   margin: 20px;
   background: white;
-  border: 4px solid #432371;
+  border: 4px solid black;
   outline: none;
-
 }
 
 #search {
-  color: white;
+  font-family: "Montserrat Subrayada", sans-serif;
+  color: #fbfefb;
   background: black;
   border-radius: 50%;
   width: 100px;
   height: 100px;
   margin: 6px;
-  border: 4px solid #432371;
+  border: 4px solid black;
   cursor: pointer;
   outline: none;
 }
 
-
-#search:hover {
+#search:hover,
+#to-top:hover {
   color: black;
   background: #fbfefb;
   box-shadow: 0 0 10px #fbfefb, 0 0 5px #fbfefb, 0 0 90px #fbfefb;
 }
 
-footer ul{
+footer ul {
+  font-family: "MuseoModerno", cursive;
   width: 100%;
   margin-bottom: 0;
   padding-top: 40px;
   padding-bottom: 30px;
   background-color: #35a7ff;
   color: #fdfffc;
-  
-
+  opacity: 0.9;
 }
-ul, 
-a{
+
+#to-top {
+  font-family: "Montserrat Subrayada", sans-serif;
+  background: #000000;
+  color: #fbfefb;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+
+ul,
+a {
   text-decoration: none;
   list-style: none;
 }
-
+a:hover {
+  cursor: pointer;
+}
 @media screen and (min-width: 600px) {
   body {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+
+    opacity: 0.9;
   }
   div {
     max-width: 100%;
@@ -139,16 +160,23 @@ a{
   }
 
   main {
-     
     display: flex;
     flex-direction: column;
     width: fit-content;
     padding: 20px;
-    
-
   }
   iframe {
-    text-align: center;
+    display: flex;
   }
 
+  .web-info {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  article {
+    font-size: 28px;
+  }
+  p {
+    font-size: 20px;
+  }
 }
