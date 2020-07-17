@@ -84,7 +84,7 @@ I will be using one API from Test dive (https://tastedive.com/read/api)-
 |July 13| Core Application Structure (HTML, CSS, etc.) | Complete
 |July 15| JavaScript incorporation  | Complete
 |July 14| Deeper Css| Complete
-|July 16| MVP/ testing | Incomplete
+|July 16| MVP/ testing | Complete
 |July 17| Presentations | Incomplete
 
 ## Priority Matrix
@@ -107,8 +107,8 @@ I will be using one API from Test dive (https://tastedive.com/read/api)-
 | Css general styling | H | 4hrs| 4hrs | 4hrs |
 | Evaluating and Fixes| H | 6hrs| 6hrs | 6hrs |
 | Editing| L | 5hrs| 4hrs | 4hrs |
-| Githubpages Deployment| L | 1hrs| 0hrs | 0hrs |
-| Total | H | 37hrs| 0hrs | 0hrs |
+| Githubpages Deployment| L | 1hrs| .5hrs | .5hrs |
+| Total | H | 37hrs| 37hrs | 36hrs |
 
 ## Code Snippet
 ```
