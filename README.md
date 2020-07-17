@@ -66,12 +66,12 @@ I will be using one API from Test dive (https://tastedive.com/read/api)-
 - Will use an API to get data from a library of music and movies.
 - Will start by developing phone first.
 - Clicking on the first button will create a random return of a song, clicking a second button will create a random return of a movie. will return image, information and links to resources. 
-- A second page will add a general search for movies or songs with it's information.
+- page will add a general search for movies or songs with it's information.
 
 
 #### PostMVP  
-- Monitor traffic of users.
-- Create a database to store feedbacks
+- Monitor user's traffic.
+- Create a database to store feedbacks.
 - Link to different social-media websites.
 
 ## Project Schedule
@@ -79,11 +79,11 @@ I will be using one API from Test dive (https://tastedive.com/read/api)-
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 13| Project Approval | Complete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 15| JavaScript incorporation  | Incomplete
-|July 14| Deeper Css| Incomplete
+|July 13| Core Application Structure (HTML, CSS, etc.) | Complete
+|July 15| JavaScript incorporation  | Complete
+|July 14| Deeper Css| Complete
 |July 16| MVP/ testing | Incomplete
 |July 17| Presentations | Incomplete
 
@@ -97,25 +97,63 @@ I will be using one API from Test dive (https://tastedive.com/read/api)-
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Html structure | H | 3hrs| 0hrs | 0hrs |
-| JS/Creating functions | H | 3hrs| 0hrs | 0hrs |
-| Working with API | H | 4hrs| 0hrs | 0hrs |
-| JS/appnd. elements to the DOM | H |4hrs| 0hrs | 0hrs |
-| JS/remv. elemnts| H | 2hrs| 0hrs | 0hrs |
-| Evaluating JS funtionability | H | 2hrs| 0hrs | 0hrs |
-| Css mobile style | H | 3hrs| 0hrs | 0hrs |
-| Css general styling | H | 4hrs| 0hrs | 0hrs |
-| Evaluating and Fixes| H | 6hrs| 0hrs | 0hrs |
-| Editing| L | 5hrs| 0hrs | 0hrs |
+| Html structure | H | 3hrs| 3hrs | 3hrs |
+| JS/Creating functions | H | 3hrs| 3hrs | 3hrs |
+| Working with API | H | 4hrs| 5hrs | 5hrs |
+| JS/appnd. elements to the DOM | H |4hrs| 3hrs | 3hrs |
+| JS/remv. elemnts| H | 2hrs| 1.5hrs | 1.5hrs |
+| Evaluating JS funtionability | H | 2hrs| 2hrs | 2hrs |
+| Css mobile style | H | 3hrs| 4hrs | 4hrs |
+| Css general styling | H | 4hrs| 4hrs | 4hrs |
+| Evaluating and Fixes| H | 6hrs| 6hrs | 6hrs |
+| Editing| L | 5hrs| 4hrs | 4hrs |
 | Githubpages Deployment| L | 1hrs| 0hrs | 0hrs |
 | Total | H | 37hrs| 0hrs | 0hrs |
 
 ## Code Snippet
+```
+async function getMusicMovie(band, movie) {
+  try {
+    const URL = `https://corsanywhere.herokuapp.com/tastedive.com/api/similar?q=${band}%2C${movie}&k=${KEY}&info=1&limit=10`;
 
-NOT YET
+    const response = await axios.get(URL);
+
+    console.log(response.data.Similar.Results);
+    //data that shows the the array.
+
+    removeLastSearch();
+
+    renderSearch(response.data.Similar.Results);
+  } catch (error) {
+    console.log(`This is an error : ${error}`);
+  }
+}
+
+//to get all data from the database
+const renderSearch = (allSearch) => {
+  allSearch.forEach((search) => {
+    console.log(search);
+    const container = document.createElement("section");
+    const newSearch = document.createElement("article");
+    newSearch.innerText = search.Name;
+    const searchTeaser = document.createElement("p");
+    searchTeaser.innerText = search.wTeaser;
+    const video = document.createElement("iframe");
+    video.src = search.yUrl;
+    //to append it to parent node and append child
+    container.appendChild(newSearch);
+    container.appendChild(searchTeaser);
+    container.appendChild(video);
+    document.querySelector(".results").appendChild(container);
+  });
+};
+```
+
+
 
 ## Change Log
-- Switched end point on API 
+- Switched end point on API. 
 - Receive suggestions for movies and music in search bar. 
+- pivoted project to reflect 1 endpoint.
 
  
