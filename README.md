@@ -1,7 +1,8 @@
 Overview
 
 ## Serendipitous
-https://pages.git.generalassemb.ly/Subsono/Serendipitous/
+
+https://pages.git.generalassemb.ly/Subsono/Serendipitous/  
 
 
 
