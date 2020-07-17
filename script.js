@@ -8,6 +8,7 @@ const form = document.querySelector("form");
 form.addEventListener("submit", getInput);
 
 function getInput(e) {
+  //prevents for the page to refresh automatically
   e.preventDefault();
 
   const musicMovieValue = document.querySelector("#music-movie").value;
@@ -17,7 +18,7 @@ function getInput(e) {
   getMusicMovie(musicMovieValue);
 }
 // to get API request
-async function getMusicMovie(band, movie) {
+async function getMusicMovie(band, movie) {      //added queries q to search, k.  my key, info for all data and limit to show how many will show up
   try {
     const URL = `https://corsanywhere.herokuapp.com/tastedive.com/api/similar?q=${band}%2C${movie}&k=${KEY}&info=1&limit=10`;
 
