@@ -34,7 +34,7 @@ async function getMusicMovie(band, movie) {
   }
 }
 
-//to get all data from the database
+//to get all separate data from the database
 const renderSearch = (allSearch) => {
   allSearch.forEach((search) => {
     console.log(search);
