@@ -23,15 +23,14 @@ body {
 
 h1 {
   font-family: "MuseoModerno", cursive;
-  font-size: 32px;
+  font-size: 38px;
   width: 100%;
   margin: 0px;
-  padding: 0;
-  
+  padding-bottom: 40px;
   background-color: #ef233c;
   opacity: 0.8;
   color: #f7f3f3;
-  padding: 0px;
+  padding: 20px;
 }
 
 .section1 {
@@ -41,7 +40,7 @@ h1 {
 }
 
 div {
-  height: ;
+  
   width: 100%;
   background-size: cover;
   margin: 0px;
