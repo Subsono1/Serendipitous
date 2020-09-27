@@ -2,7 +2,7 @@ Overview
 
 ## Serendipitous
 
-https://pages.git.generalassemb.ly/Subsono/Serendipitous/  
+https://zen-kepler-de3f60.netlify.app/
 
 
 
